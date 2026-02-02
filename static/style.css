@@ -1,0 +1,63 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка */
+header {
+    background-color: #6200ea;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 300;
+}
+
+/* Контейнер для контента */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Список задач (убираем точки) */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Карточка задачи */
+li {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-left: 5px solid #6200ea; /* Фиолетовая полоска слева */
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: translateY(-3px); /* Легкое всплытие при наведении */
+}
+
+/* Зачеркнутый текст */
+s {
+    color: #888;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9em;
+}
