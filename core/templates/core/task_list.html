@@ -9,10 +9,8 @@
                 {% if task.is_completed %}
                     <s>{{ task.title }}</s> (Готово!)
                 {% else %}
-                    <b>{{ task.title }}</b>
-                {% endif %}
-                
-                <p>{{ task.description }}</p>
+                    <a href="{% url 'task_detail' task.id %}"><b>{{ task.title }}</b></a>
+                {% endif %} <p>{{ task.description }}</p>
             </li>
         {% empty %}
             <li>Задач пока нет.</li>

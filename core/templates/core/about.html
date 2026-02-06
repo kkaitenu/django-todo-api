@@ -1,0 +1,12 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <h2>О проекте</h2>
+    <div style="background: white; padding: 20px; border-radius: 8px;">
+        <p>Это приложение для управления задачами.</p>
+        <p>Автор: <b>Твое Имя</b></p>
+        <p>Стек: Django + DRF</p>
+        <br>
+        <a href="{% url 'home' %}">← Вернуться на главную</a>
+    </div>
+{% endblock %}
